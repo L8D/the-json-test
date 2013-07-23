@@ -24,3 +24,4 @@ python:
 
 clean:
 	rm -f $(OUTPUT)
+	cp data-orig.json data.json

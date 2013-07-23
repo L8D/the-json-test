@@ -1,7 +1,16 @@
 The JSON test
 =============
 
-A semi-unfair comparison of languages to see how well they handle json parsing
+An examplistic comparison of syntax and style between languages.
+
+The primary requirement is that your code can parse the `data.json` and print the name and level of each 'player'.
+
+Additionally these things will get you bonus points:
+
+- The code can generate changed JSON output.
+- The code can re-generate the JSON in a pretty format matching the existing one.
+- The code can write the matching pretty format to the `data.json`
+- The code can do the above will keeping the same file variable.
 
 ## Add your own language
 

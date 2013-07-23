@@ -1,7 +1,7 @@
 SOURCE=main
 OUTPUT=run
 
-all: coffee ruby go c python
+all: coffee ruby go c python tcl
 
 coffee:
 	coffee $(SOURCE).coffee
@@ -21,6 +21,9 @@ js:
 
 python:
 	python3 $(SOURCE).py
+
+tcl:
+	tclsh $(SOURCE).tcl
 
 clean:
 	rm -f $(OUTPUT)

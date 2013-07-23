@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "parson.c"
+#include "lib/parson.c"
 
 int main() {
   char filename[] = "data.json";

@@ -1,0 +1,28 @@
+{
+  "players": [
+    {
+      "inventory": [
+        {
+          "name": "sword",
+          "type": "weapon/sword"
+        },
+        {
+          "name": "shield",
+          "type": "weapon/sword"
+        }
+      ],
+      "name": "link",
+      "level": 1
+    },
+    {
+      "inventory": [
+        {
+          "name": "mushroom",
+          "type": "item/powerup"
+        }
+      ],
+      "name": "mario",
+      "level": 1
+    }
+  ]
+}

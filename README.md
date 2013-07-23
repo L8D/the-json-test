@@ -7,7 +7,7 @@ The primary requirement is that your code can parse the `data.json` and print th
 
 Additionally these things will get you bonus points:
 
-- The code can generate changed JSON output.
+- The code _can_ generate changed JSON output.(But won't do any changing)
 - The code can re-generate the JSON in a pretty format matching the existing one.
 - The code can write the matching pretty format to the `data.json`
 - The code can do the above will keeping the same file variable.
@@ -23,3 +23,13 @@ langname:
 
 Where `langname` is the name of the language(exa. `python`, `ruby`, `node`), and `langcmd` is a command that will execute your code(exa. `python`, `gcc`).
 If needed, you can add other files too for your script to use. Make sure to try to keep them in the `lib/` folder.
+
+# LANGS WANTED
+
+- Lua
+- Haskell
+- Perl
+- Scala
+- Shell
+- Tcl(Maybe?)
+- Clojure

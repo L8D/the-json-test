@@ -26,10 +26,9 @@ tcl:
 	tclsh $(SOURCE).tcl
 
 clojure:
-	cd $(SOURCE)-clj/
-	lein run
-	cd ..
+	cd $(SOURCE)-clj/ && lein run
 
 clean:
 	rm -f $(OUTPUT)
 	cp data-orig.json data.json
+	cd $(SOURCE)-clj/ && lein clean

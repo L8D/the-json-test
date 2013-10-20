@@ -1,9 +1,11 @@
 #!/usr/bin/env coffee
 fs = require 'fs'
 
-fs.readFileSync 'data.json', 'utf8', (err, data) ->
-  if err throw err
-  for player in JSON.parse data.players
+fs.readFile 'data.json', encoding: 'utf-8', (err, data) ->
+  throw err if err
+  data = JSON.parse data
+
+  for player in data.players
     console.log "#{player.name} is level #{player.level}"
 
-  fs.writeFile 'data.json', JSON.stringify(data, null, 2), (err) -> throw err if err
+  fs.writeFile 'data.json', JSON.stringify(data, null, 2) + '\n', (err) -> throw err if err

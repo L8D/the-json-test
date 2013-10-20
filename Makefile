@@ -1,7 +1,7 @@
 SOURCE=main
 OUTPUT=run
 
-all: coffee ruby go c python tcl
+all: coffee ruby go c python tcl clojure
 
 coffee:
 	coffee $(SOURCE).coffee
@@ -24,6 +24,11 @@ python:
 
 tcl:
 	tclsh $(SOURCE).tcl
+
+clojure:
+	cd $(SOURCE)-clj/
+	lein run
+	cd ..
 
 clean:
 	rm -f $(OUTPUT)
